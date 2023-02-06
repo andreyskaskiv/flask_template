@@ -197,9 +197,12 @@ ul.mainmenu li a:hover {
 .form-contact input[type=submit], textarea, .registration {
     font-size: 16px; /* размер шрифта */
     font-weight: bold; /* жирный шрифт */
-
 }
 
+#login_control {
+    overflow: hidden;
+    margin-top: 30px;
+}
 
 
 /* --- --- --- --- --- --- --- --- */

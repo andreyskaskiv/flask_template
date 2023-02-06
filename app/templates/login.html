@@ -28,9 +28,10 @@
             {% endfor %}
 
             <p>{{ form.remember.label() }} {{ form.remember() }}
-            <hr>
-            <p>{{ form.submit() }}
-            <p><a class="" href="{{ url_for('auth.register') }}">Registration</a>
+            <div id="login_control">
+                <p style="float: left;">{{ form.submit() }}
+                <p style="float: right;" ><a href="{{ url_for('auth.register') }}">Registration</a>
+            </div>
         </form>
 
     </div>
@@ -38,23 +39,3 @@
 
 
 
-{#            <ul class="login_list">#}
-{#                <li>#}
-{#                    <div class="login_title">Email:</div>#}
-{#                    <input class="login_input" type="text" name="email" value="">#}
-{#                </li>#}
-{#                <li>#}
-{#                    <div class="login_title">Password:</div>#}
-{#                    <input class="login_input" type="password" name="psw" value="">#}
-{#                </li>#}
-{#                <li>#}
-{#                    <input type="checkbox" name="remainme">#}
-{#                    <span class="reg_argee">Remember me</span>#}
-{#                </li>#}
-{#            </ul>#}
-{##}
-{#            <div id="login_control">#}
-{#                <div style="float: left;"><input class="login_button" type="submit" value="To come in"></div>#}
-{#                <div style="float: right;" class="register_button"><a href="{{ url_for('auth.register') }}">Registration</a>#}
-{#                </div>#}
-{#            </div>#}
